@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Libros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <img src="zz.png" alt="Logo" class="logo">
+            <span class="website-name">Segunda Vida</span>
+        </div>
+        <div class="header-left">
+            <input type="text" id="search" placeholder="Buscar libro...">
+            <button class="sell-books-button">Vende tus libros</button>
+            <button class="create-alerts-button">Crea tus alertas bibliográficas</button>
+        </div>
+        <div class="header-right">
+            <nav>
+                <ul>
+                    <li><a href="#">Mi Cuenta</a></li>
+                    <li><a href="#">Carrito</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="main-content">
+        <aside>
+            <h2>Categorías</h2>
+            <div class="categories-wrapper">
+                <ul class="categories">
+                    <li><button onclick="filterBooks('Artes')">Artes</button></li>
+                    <li><button onclick="filterBooks('Biografías')">Biografías</button></li>
+                    <li><button onclick="filterBooks('Ciencias')">Ciencias</button></li>
+                    <li><button onclick="filterBooks('Computación')">Computación</button></li>
+                    <li><button onclick="filterBooks('Consulta')">Consulta</button></li>
+                    <li><button onclick="filterBooks('Deportes')">Deportes</button></li>
+                    <li><button onclick="filterBooks('Derecho')">Derecho</button></li>
+                    <li><button onclick="filterBooks('Economía')">Economía</button></li>
+                    <li><button onclick="filterBooks('Estilos')">Estilos</button></li>
+                </ul>
+            </div>
+            <div class="event-image">
+                <img src="fil.jpg" alt="Evento">
+            </div>
+        </aside>
+        <main>
+            <section id="book-slider">
+                <div class="book-container">
+                    <div class="book-grid">
+                        <!-- Example book card -->
+                        <div class="book">
+                            <img src="arg.jpg" alt="Libro 1">
+                            <div class="book-info">
+                                <h3>Título del Libro 1</h3>
+                                <p>Autor del Libro 1</p>
+                                <p>2024</p>
+                                <p>Edición: 1ª</p>
+                                <p>Condición: Nuevo</p>
+                            </div>
+                            <div class="button-container">
+                                <button onclick="mostrarPrecio()">S/45</button>
+                                <button onclick="meGusta()">&#10084;</button>
+                                <button onclick="verReseña()">4.5&#9733;</button>
+                                <button onclick="reservarLibro()">Comprar</button>
+                            </div>
+                        </div>
+                                                <div class="book">
+                            <img src="199.jpg" alt="Libro 1">
+                            <div class="book-info">
+                                <h3>Título del Libro 1</h3>
+                                <p>Autor del Libro 1</p>
+                                <p>2024</p>
+                                <p>Edición: 1ª</p>
+                                <p>Condición: Nuevo</p>
+                            </div>
+                            <div class="button-container">
+                                <button onclick="mostrarPrecio()">S/45</button>
+                                <button onclick="meGusta()">&#10084;</button>
+                                <button onclick="verReseña()">4.5&#9733;</button>
+                                <button onclick="reservarLibro()">Comprar</button>
+                            </div>
+                        </div>
+                                                <div class="book">
+                            <img src="red.jpg" alt="Libro 1">
+                            <div class="book-info">
+                                <h3>Título del Libro 1</h3>
+                                <p>Autor del Libro 1</p>
+                                <p>2024</p>
+                                <p>Edición: 1ª</p>
+                                <p>Condición: Nuevo</p>
+                            </div>
+                            <div class="button-container">
+                                <button onclick="mostrarPrecio()">S/45</button>
+                                <button onclick="meGusta()">&#10084;</button>
+                                <button onclick="verReseña()">4.5&#9733;</button>
+                                <button onclick="reservarLibro()">Comprar</button>
+                            </div>
+                        </div>
+                                                <div class="book">
+                            <img src="6666.jpg" alt="Libro 1">
+                            <div class="book-info">
+                                <h3>Título del Libro 1</h3>
+                                <p>Autor del Libro 1</p>
+                                <p>2024</p>
+                                <p>Edición: 1ª</p>
+                                <p>Condición: Nuevo</p>
+                            </div>
+                            <div class="button-container">
+                                <button onclick="mostrarPrecio()">S/45</button>
+                                <button onclick="meGusta()">&#10084;</button>
+                                <button onclick="verReseña()">4.5&#9733;</button>
+                                <button onclick="reservarLibro()">Comprar</button>
+                            </div>
+                        </div>
+                                                <div class="book">
+                            <img src="66.jpg" alt="Libro 1">
+                            <div class="book-info">
+                                <h3>Título del Libro 1</h3>
+                                <p>Autor del Libro 1</p>
+                                <p>2024</p>
+                                <p>Edición: 1ª</p>
+                                <p>Condición: Nuevo</p>
+                            </div>
+                            <div class="button-container">
+                                <button onclick="mostrarPrecio()">S/45</button>
+                                <button onclick="meGusta()">&#10084;</button>
+                                <button onclick="verReseña()">4.5&#9733;</button>
+                                <button onclick="reservarLibro()">Comprar</button>
+                            </div>
+                        </div>
+                                                <div class="book">
+                            <img src="66.jpg" alt="Libro 1">
+                            <div class="book-info">
+                                <h3>Título del Libro 1</h3>
+                                <p>Autor del Libro 1</p>
+                                <p>2024</p>
+                                <p>Edición: 1ª</p>
+                                <p>Condición: Nuevo</p>
+                            </div>
+                            <div class="button-container">
+                                <button onclick="mostrarPrecio()">S/45</button>
+                                <button onclick="meGusta()">&#10084;</button>
+                                <button onclick="verReseña()">4.5&#9733;</button>
+                                <button onclick="reservarLibro()">Comprar</button>
+                            </div>
+                        </div>
+                        <!-- Repeat for more books up to 50 -->
+                        <!-- ... -->
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

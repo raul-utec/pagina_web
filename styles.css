@@ -1,0 +1,245 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5F5; /* Color de fondo del cuerpo */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #D92921; /* Color de fondo de la cabecera */
+    border-bottom: 1px solid #ddd;
+}
+
+.header-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    max-width: 60%; /* Reducir el ancho del buscador */
+}
+
+.header-logo {
+    flex: 0 0 auto;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo .logo {
+    height: 40px;
+    width: auto;
+}
+
+.header-logo .website-name {
+    font-size: 24px; /* Tamaño del texto del nombre del sitio */
+    font-weight: bold;
+    margin-left: 10px; /* Espacio adicional después del logo */
+}
+
+.header-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    color: #fff; /* Color del texto en la cabecera */
+}
+
+header input {
+    padding: 8px;
+    font-size: 16px;
+    width: 100%; /* Ajustar al 100% del contenedor */
+    max-width: 250px; /* Establecer un ancho máximo para el buscador */
+}
+
+.sell-books-button,
+.create-alerts-button {
+    margin-left: 10px; /* Espacio entre los botones y el buscador */
+    padding: 8px 15px; /* Ajustar el padding de los botones */
+    font-size: 14px; /* Tamaño de fuente de los botones */
+    border: none; /* Quitar borde de los botones */
+    background-color: transparent; /* Fondo transparente para los botones */
+    cursor: pointer;
+    color: #fff; /* Color del texto */
+}
+
+.sell-books-button:hover,
+.create-alerts-button:hover {
+    background-color: #ddd; /* Color de fondo al pasar el cursor sobre los botones */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Color del texto en los enlaces de navegación */
+    margin-left: 20px; /* Espacio entre los enlaces */
+    padding: 8px; /* Ajustar el padding */
+}
+
+header nav ul li a:hover {
+    background-color: #333; /* Color de fondo al pasar el cursor */
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+}
+
+aside {
+    width: 200px;
+    padding: 20px;
+    background-color: #fff; /* Color de fondo del aside */
+    border-right: 1px solid #ddd;
+    overflow-y: auto; /* Agregar desplazamiento vertical */
+}
+
+aside h2 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.categories-wrapper {
+    max-height: 200px; /* Altura máxima de la lista de categorías */
+    overflow-y: auto; /* Agregar barra de desplazamiento vertical */
+}
+
+.categories {
+    padding: 0;
+    margin: 0;
+}
+
+.categories li {
+    list-style: none;
+    margin-bottom: 0; /* Eliminar el margen inferior */
+    font-size: 12px; /* Tamaño de fuente más pequeño para las categorías */
+}
+
+.categories li button {
+    width: 100%;
+    padding: 8px; /* Reducir el padding para ajustar mejor */
+    font-size: 12px; /* Tamaño de fuente más pequeño para los botones */
+    border: none; /* Quitar borde de los botones */
+    background-color: transparent; /* Fondo transparente para los botones */
+    cursor: pointer;
+    text-align: left;
+    outline: none;
+}
+
+.categories li button:hover {
+    background-color: #f0f0f0; /* Color de fondo al pasar el cursor sobre los botones */
+}
+
+.event-image {
+    margin-top: 20px;
+}
+
+.event-image img {
+    width: 100%;
+    max-width: 200px; /* Ancho máximo de la imagen del evento */
+    height: auto;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+#book-slider {
+    position: relative;
+    width: 100%;
+}
+
+.book-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.book {
+    background-color: #fff; /* Color de fondo de cada libro */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.book-info {
+    text-align: left;
+    width: 100%;
+}
+
+.book-info h3 {
+    margin: 5px 0;
+    font-weight: bold; /* Hacer el título del libro en negrita */
+}
+
+.book-info p {
+    margin: 2px 0;
+    font-size: 14px; /* Tamaño más pequeño */
+    color: #777; /* Color gris para la información del libro */
+}
+
+.button-container {
+    display: flex;
+    gap: 5px; /* Espacio entre botones */
+    margin-top: 10px;
+    width: 100%;
+    justify-content: space-around; /* Alinear los botones horizontalmente */
+}
+
+.book button {
+    padding: 10px;
+    border: 1px solid #ddd; /* Borde tenue gris */
+    background-color: transparent; /* Fondo transparente para los botones */
+    color: #000; /* Color del texto de los botones */
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.book button:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Color de fondo al pasar el cursor sobre los botones */
+}
+
+.book button.star {
+    color: yellow; /* Color amarillo para el icono de estrella */
+}
+
+.book button.heart {
+    color: red; /* Color rojo para el icono de corazón */
+}
+
