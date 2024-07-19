@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Libros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <img src="zz.png" alt="Logo" class="logo">
+            <span class="website-name">Segunda Vida</span>
+        </div>
+        <div class="header-left">
+            <input type="text" id="search" placeholder="Buscar libro...">
+            <button class="sell-books-button">Vende tus libros</button>
+            <button class="create-alerts-button">Crea tus alertas bibliográficas</button>
+        </div>
+        <div class="header-right">
+            <nav>
+                <ul>
+                    <li><a href="#">Mi Cuenta</a></li>
+                    <li><a href="#">Carrito</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="main-content">
+        <aside>
+            <h2>Filtros</h2>
+            <form id="filter-form">
+                <div>
+                    <label for="category">Categoría:</label>
+                    <select id="category" name="category">
+                        <option value="">Todas</option>
+                        <option value="Artes">Artes</option>
+                        <option value="Biografías">Biografías</option>
+                        <option value="Ciencias">Ciencias</option>
+                        <option value="Computación">Computación</option>
+                        <option value="Consulta">Consulta</option>
+                        <option value="Deportes">Deportes</option>
+                        <option value="Derecho">Derecho</option>
+                        <option value="Economía">Economía</option>
+                        <option value="Estilos">Estilos</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="year">Año:</label>
+                    <input type="number" id="year" name="year">
+                </div>
+                <div>
+                    <label for="title">Título:</label>
+                    <input type="text" id="title" name="title">
+                </div>
+                <div>
+                    <label for="price">Precio:</label>
+                    <input type="number" id="price" name="price">
+                </div>
+                <button type="button" onclick="applyFilters()">Aplicar Filtros</button>
+            </form>
+        </aside>
+        <main>
+            <section id="book-slider">
+                <div class="book-container">
+                    <div class="book-grid" id="book-grid">
+                        <!-- Bloques de libros -->
+                        <div class="book" data-category="Artes" data-year="2024" data-title="Libro de Arte" data-price="45">
+                            <img src="arg.jpg" alt="Libro 1">
+                            <div class="book-info">
+                                <h3>Libro de Arte</h3>
+                                <p>Autor del Libro 1</p>
+                                <p>2024</p>
+                                <p>Edición: 1ª</p>
+                                <p>Condición: Nuevo</p>
+                            </div>
+                            <div class="button-container">
+                                <button onclick="mostrarPrecio()">S/45</button>
+                                <button onclick="meGusta()">&#10084;</button>
+                                <button onclick="verReseña()">4.5&#9733;</button>
+                                <button onclick="reservarLibro()">Comprar</button>
+                            </div>
+                        </div>
+                        <!-- Más bloques de libros -->
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
